@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31bac7a0-f0a2-4927-a959-ece363c675da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.generators" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/xccov_report.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/functions_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/functions_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/functions_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/functions.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/function_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/functions_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xccov_report.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xccov_report.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20200423032844_create_functions.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +166,7 @@
       <workItem from="1587609222415" duration="2642000" />
       <workItem from="1587612172518" duration="300000" />
       <workItem from="1587612550105" duration="1631000" />
+      <workItem from="1587617367036" duration="367000" />
     </task>
     <servers />
   </component>
@@ -185,64 +177,64 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587612570935">
+    <state x="560" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587617393787">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="560" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1587612570934" />
-    <state width="939" height="358" key="GridCell.Tab.0.bottom" timestamp="1587615688499">
+    <state x="560" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1587617393787" />
+    <state width="939" height="358" key="GridCell.Tab.0.bottom" timestamp="1587617711658">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688499" />
-    <state width="939" height="358" key="GridCell.Tab.0.center" timestamp="1587615688498">
+    <state width="939" height="358" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711658" />
+    <state width="939" height="358" key="GridCell.Tab.0.center" timestamp="1587617711657">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688498" />
-    <state width="939" height="358" key="GridCell.Tab.0.left" timestamp="1587615688497">
+    <state width="939" height="358" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711657" />
+    <state width="939" height="358" key="GridCell.Tab.0.left" timestamp="1587617711654">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688496" />
-    <state width="939" height="358" key="GridCell.Tab.0.right" timestamp="1587615688498">
+    <state width="939" height="358" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711654" />
+    <state width="939" height="358" key="GridCell.Tab.0.right" timestamp="1587617711657">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688498" />
-    <state width="939" height="358" key="GridCell.Tab.1.bottom" timestamp="1587615688338">
+    <state width="939" height="358" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711657" />
+    <state width="939" height="358" key="GridCell.Tab.1.bottom" timestamp="1587617711398">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688338" />
-    <state width="939" height="358" key="GridCell.Tab.1.center" timestamp="1587615688338">
+    <state width="939" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711398" />
+    <state width="939" height="358" key="GridCell.Tab.1.center" timestamp="1587617711398">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688338" />
-    <state width="939" height="358" key="GridCell.Tab.1.left" timestamp="1587615688338">
+    <state width="939" height="358" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711398" />
+    <state width="939" height="358" key="GridCell.Tab.1.left" timestamp="1587617711398">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688338" />
-    <state width="939" height="358" key="GridCell.Tab.1.right" timestamp="1587615688338">
+    <state width="939" height="358" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711398" />
+    <state width="939" height="358" key="GridCell.Tab.1.right" timestamp="1587617711398">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688338" />
-    <state width="939" height="358" key="GridCell.Tab.2.bottom" timestamp="1587615688339">
+    <state width="939" height="358" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711398" />
+    <state width="939" height="358" key="GridCell.Tab.2.bottom" timestamp="1587617711399">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688339" />
-    <state width="939" height="358" key="GridCell.Tab.2.center" timestamp="1587615688339">
+    <state width="939" height="358" key="GridCell.Tab.2.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711399" />
+    <state width="939" height="358" key="GridCell.Tab.2.center" timestamp="1587617711399">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688339" />
-    <state width="939" height="358" key="GridCell.Tab.2.left" timestamp="1587615688339">
+    <state width="939" height="358" key="GridCell.Tab.2.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711399" />
+    <state width="939" height="358" key="GridCell.Tab.2.left" timestamp="1587617711399">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688339" />
-    <state width="939" height="358" key="GridCell.Tab.2.right" timestamp="1587615688339">
+    <state width="939" height="358" key="GridCell.Tab.2.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711399" />
+    <state width="939" height="358" key="GridCell.Tab.2.right" timestamp="1587617711399">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587615688339" />
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587613718727">
+    <state width="939" height="358" key="GridCell.Tab.2.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587617711399" />
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587617629613">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587613718727" />
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587617629613" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587615688295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
+    <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587617764488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
   </component>
 </project>
