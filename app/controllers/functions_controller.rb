@@ -4,7 +4,9 @@ class FunctionsController < ApplicationController
   # GET /functions
   # GET /functions.json
   def index
-    @functions = Function.all
+    @functions = Function.order(line_coverage: :desc).each do |f|
+      f.line_coverage *= 100
+    end
   end
 
   # GET /functions/1

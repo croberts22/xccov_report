@@ -3,7 +3,7 @@
 <h1>Functions</h1>
 
 <div class="table-responsive">
-  <table class="table table-striped">
+  <table class="table">
     <thead>
       <tr>
         <th><div class="th-inner sortable both">Name</div></th>
@@ -18,10 +18,10 @@
 
     <tbody>
       <% @functions.each do |function| %>
-        <tr>
+        <tr class=<%= function.line_coverage > 75 ? "bg-success" : function.line_coverage > 35 ? "bg-warning" : "bg-danger" %> >
           <td><%= function.name %></td>
           <td><%= function.covered_lines %></td>
-          <td><%= function.line_coverage %></td>
+          <td><%= function.line_coverage %>%</td>
           <td><%= function.line_number %></td>
           <td><%= function.execution_count %></td>
           <td><%= function.executable_lines %></td>
