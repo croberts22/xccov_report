@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @function.name %>
+</p>
+
+<p>
+  <strong>Covered lines:</strong>
+  <%= @function.covered_lines %>
+</p>
+
+<p>
+  <strong>Line coverage:</strong>
+  <%= @function.line_coverage %>
+</p>
+
+<p>
+  <strong>Line number:</strong>
+  <%= @function.line_number %>
+</p>
+
+<p>
+  <strong>Execution count:</strong>
+  <%= @function.execution_count %>
+</p>
+
+<p>
+  <strong>Executable lines:</strong>
+  <%= @function.executable_lines %>
+</p>
+
+<%= link_to 'Edit', edit_function_path(@function) %> |
+<%= link_to 'Back', functions_path %>
