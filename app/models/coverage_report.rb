@@ -1,2 +1,0 @@
-class CoverageReport < ApplicationRecord
-end
