@@ -4,7 +4,9 @@ class CoverageReportsController < ApplicationController
   # GET /coverage_reports
   # GET /coverage_reports.json
   def index
-    @coverage_reports = CoverageReport.all
+    @coverage_reports = CoverageReport.all.each do |report|
+      report.line_coverage = (report.line_coverage * 100).round(2)
+    end
   end
 
   # GET /coverage_reports/1

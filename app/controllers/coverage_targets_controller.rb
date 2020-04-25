@@ -4,7 +4,9 @@ class CoverageTargetsController < ApplicationController
   # GET /coverage_targets
   # GET /coverage_targets.json
   def index
-    @coverage_targets = CoverageTarget.all
+    @coverage_targets = CoverageTarget.all.each do |target|
+      target.line_coverage = (target.line_coverage * 100).round(2)
+    end
   end
 
   # GET /coverage_targets/1

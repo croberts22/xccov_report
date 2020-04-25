@@ -1,33 +1,94 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Coverage Reports</h1>
+<h1>iOS Coverage Reports</h1>
 
-<table>
-  <thead>
+<!--datasets: [{-->
+<!--label: 'My First dataset',-->
+<!--backgroundColor: window.chartColors.red,-->
+<!--borderColor: window.chartColors.red,-->
+<!--data: [-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor()-->
+<!--],-->
+<!--fill: false,-->
+<!--}, {-->
+<!--label: 'My Second dataset',-->
+<!--fill: false,-->
+<!--backgroundColor: window.chartColors.blue,-->
+<!--borderColor: window.chartColors.blue,-->
+<!--data: [-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor(),-->
+<!--randomScalingFactor()-->
+<!--],-->
+<!--}]-->
+
+<canvas id="myChart" width="400" height="100"></canvas>
+<script>
+    var ctx = document.getElementById('myChart');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: 'Executable Lines',
+                data: <%= @coverage_reports.map { |report| report.executable_lines } %>,
+                backgroundColor: [ 'rgba(255, 99, 132, 1.0)' ],
+                borderColor: [ 'rgba(255, 99, 132, 1.0)' ],
+                borderWidth: 1,
+                fill: true
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
     <tr>
       <th>Covered lines</th>
-      <th>Line coverage</th>
-      <th>Coverage targets</th>
       <th>Executable lines</th>
+      <th>Line coverage</th>
+      <th># of Targets</th>
+      <th>Report Uploaded</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @coverage_reports.each do |coverage_report| %>
       <tr>
-        <td><%= coverage_report.covered_lines %></td>
-        <td><%= coverage_report.line_coverage %></td>
-        <td><%= coverage_report.coverage_targets %></td>
-        <td><%= coverage_report.executable_lines %></td>
-        <td><%= link_to 'Show', coverage_report %></td>
+        <td><%= number_with_delimiter(coverage_report.covered_lines) %></td>
+        <td><%= number_with_delimiter(coverage_report.executable_lines) %></td>
+        <td><%= number_to_percentage(coverage_report.line_coverage, precision: 2) %></td>
+        <td><%= coverage_report.coverage_targets.count %></td>
+        <td><%= coverage_report.created_at.strftime("%b %d, %Y at %l:%I:%M %P") %></td>
+        <td><%= link_to 'More Details', coverage_report %></td>
         <td><%= link_to 'Edit', edit_coverage_report_path(coverage_report) %></td>
-        <td><%= link_to 'Destroy', coverage_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', coverage_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
-</table>
-
+    </tbody>
+  </table>
+</div>
 <br>
 
 <%= link_to 'New Coverage Report', new_coverage_report_path %>
