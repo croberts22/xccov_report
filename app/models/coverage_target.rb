@@ -1,5 +1,6 @@
 class CoverageTarget < ApplicationRecord
   belongs_to :coverage_report
+  has_many :coverage_files, dependent: :destroy
 
   def self.make_target(coverage_report, json)
     # JSON format:

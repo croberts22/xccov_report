@@ -12,15 +12,4 @@ file = open('db/seed_data/xc_seed.json')
 json_string = file.read
 json = JSON.parse(json_string)
 
-report = CoverageReport.create do |report|
-  report.covered_lines = json['coveredLines'].to_i
-  report.line_coverage = json['lineCoverage'].to_f
-  report.executable_lines = json['executableLines'].to_i
-
-  targets_json = json['targets']
-  targets_json.each do |target_json|
-    CoverageTarget.make_target(report, target_json)
-  end
-end
-
-puts report.coverage_targets
+report = CoverageReport.make_report(json)

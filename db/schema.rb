@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_25_193245) do
+ActiveRecord::Schema.define(version: 2020_04_25_193320) do
 
   create_table "coverage_files", force: :cascade do |t|
     t.integer "covered_lines"
@@ -22,6 +22,14 @@ ActiveRecord::Schema.define(version: 2020_04_25_193245) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["coverage_target_id"], name: "index_coverage_files_on_coverage_target_id"
+  end
+
+  create_table "coverage_reports", force: :cascade do |t|
+    t.integer "covered_lines"
+    t.float "line_coverage"
+    t.integer "executable_lines"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "coverage_targets", force: :cascade do |t|
