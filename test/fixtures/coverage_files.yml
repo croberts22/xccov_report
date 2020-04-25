@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  covered_lines: 1
+  line_coverage: 1.5
+  path: MyString
+  name: MyString
+  executable_lines: 
+  coverage_target: one
+
+two:
+  covered_lines: 1
+  line_coverage: 1.5
+  path: MyString
+  name: MyString
+  executable_lines: 
+  coverage_target: two

@@ -7,6 +7,7 @@ class CreateFunctions < ActiveRecord::Migration[6.0]
       t.integer :line_number
       t.integer :execution_count
       t.integer :executable_lines
+      t.references :coverage_file, null: false, foreign_key: true
 
       t.timestamps
     end

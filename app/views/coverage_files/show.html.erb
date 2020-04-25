@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Covered lines:</strong>
+  <%= @coverage_file.covered_lines %>
+</p>
+
+<p>
+  <strong>Line coverage:</strong>
+  <%= @coverage_file.line_coverage %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @coverage_file.path %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @coverage_file.name %>
+</p>
+
+<p>
+  <strong>Executable lines:</strong>
+  <%= @coverage_file.executable_lines %>
+</p>
+
+<p>
+  <strong>Coverage target:</strong>
+  <%= @coverage_file.coverage_target_id %>
+</p>
+
+<%= link_to 'Edit', edit_coverage_file_path(@coverage_file) %> |
+<%= link_to 'Back', coverage_files_path %>

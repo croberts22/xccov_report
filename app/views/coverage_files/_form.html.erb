@@ -1,0 +1,47 @@
+<%= form_with(model: coverage_file, local: true) do |form| %>
+  <% if coverage_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coverage_file.errors.count, "error") %> prohibited this coverage_file from being saved:</h2>
+
+      <ul>
+        <% coverage_file.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :covered_lines %>
+    <%= form.number_field :covered_lines %>
+  </div>
+
+  <div class="field">
+    <%= form.label :line_coverage %>
+    <%= form.text_field :line_coverage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :path %>
+    <%= form.text_field :path %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :executable_lines %>
+    <%= form.text_field :executable_lines %>
+  </div>
+
+  <div class="field">
+    <%= form.label :coverage_target_id %>
+    <%= form.text_field :coverage_target_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
