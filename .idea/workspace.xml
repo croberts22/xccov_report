@@ -2,9 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31bac7a0-f0a2-4927-a959-ece363c675da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/coverage_files.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/coverage_reports.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/coverage_targets.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/coverage_files_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/coverage_reports_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/coverage_targets_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/coverage_files_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/coverage_targets_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/coverage_file.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/coverage_report.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/coverage_target.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/_coverage_file.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_files/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/_coverage_report.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_reports/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/_coverage_target.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/coverage_targets/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200425183742_create_coverage_files.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200425183833_create_coverage_targets.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20200425183908_create_coverage_reports.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/coverage_files_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/coverage_reports_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/coverage_targets_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/coverage_files.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/coverage_reports.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/coverage_targets.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/coverage_file_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/coverage_report_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/coverage_target_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/coverage_files_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/coverage_reports_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/coverage_targets_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/functions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/functions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/functions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/functions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xccov_report.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xccov_report.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +213,8 @@
       <workItem from="1587609222415" duration="2642000" />
       <workItem from="1587612172518" duration="300000" />
       <workItem from="1587612550105" duration="1631000" />
-      <workItem from="1587617367036" duration="2515000" />
+      <workItem from="1587617367036" duration="3398000" />
+      <workItem from="1587839030179" duration="345000" />
     </task>
     <servers />
   </component>
@@ -177,60 +229,60 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="560" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1587617393787" />
-    <state width="939" height="358" key="GridCell.Tab.0.bottom" timestamp="1587620449385">
+    <state width="939" height="358" key="GridCell.Tab.0.bottom" timestamp="1587839195192">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449385" />
-    <state width="939" height="358" key="GridCell.Tab.0.center" timestamp="1587620449384">
+    <state width="939" height="358" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587839195192" />
+    <state width="939" height="358" key="GridCell.Tab.0.center" timestamp="1587839195191">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449384" />
-    <state width="939" height="358" key="GridCell.Tab.0.left" timestamp="1587620449383">
+    <state width="939" height="358" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587839195191" />
+    <state width="939" height="358" key="GridCell.Tab.0.left" timestamp="1587839195188">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449383" />
-    <state width="939" height="358" key="GridCell.Tab.0.right" timestamp="1587620449384">
+    <state width="939" height="358" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587839195188" />
+    <state width="939" height="358" key="GridCell.Tab.0.right" timestamp="1587839195192">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449384" />
-    <state width="939" height="358" key="GridCell.Tab.1.bottom" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587839195192" />
+    <state width="939" height="358" key="GridCell.Tab.1.bottom" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.1.center" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.1.center" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.1.left" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.1.left" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.1.right" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.1.right" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.2.bottom" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.2.bottom" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.2.center" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.2.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.2.center" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.2.left" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.2.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.2.left" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
-    <state width="939" height="358" key="GridCell.Tab.2.right" timestamp="1587620449297">
+    <state width="939" height="358" key="GridCell.Tab.2.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
+    <state width="939" height="358" key="GridCell.Tab.2.right" timestamp="1587838815142">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="939" height="358" key="GridCell.Tab.2.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587620449297" />
+    <state width="939" height="358" key="GridCell.Tab.2.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587838815142" />
     <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587620989216">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587620989216" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587620449251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
+    <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587839194313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
   </component>
 </project>

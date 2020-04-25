@@ -1,0 +1,2 @@
+class CoverageFile < ApplicationRecord
+end

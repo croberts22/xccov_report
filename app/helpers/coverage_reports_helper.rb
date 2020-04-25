@@ -1,0 +1,2 @@
+module CoverageReportsHelper
+end

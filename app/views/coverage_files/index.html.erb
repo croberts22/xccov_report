@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Coverage Files</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Covered lines</th>
+      <th>Line coverage</th>
+      <th>Path</th>
+      <th>Functions</th>
+      <th>Name</th>
+      <th>Executable lines</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coverage_files.each do |coverage_file| %>
+      <tr>
+        <td><%= coverage_file.covered_lines %></td>
+        <td><%= coverage_file.line_coverage %></td>
+        <td><%= coverage_file.path %></td>
+        <td><%= coverage_file.functions %></td>
+        <td><%= coverage_file.name %></td>
+        <td><%= coverage_file.executable_lines %></td>
+        <td><%= link_to 'Show', coverage_file %></td>
+        <td><%= link_to 'Edit', edit_coverage_file_path(coverage_file) %></td>
+        <td><%= link_to 'Destroy', coverage_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Coverage File', new_coverage_file_path %>

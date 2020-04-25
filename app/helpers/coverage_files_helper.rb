@@ -1,0 +1,2 @@
+module CoverageFilesHelper
+end
