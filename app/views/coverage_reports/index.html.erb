@@ -35,18 +35,30 @@
 <canvas id="myChart" width="400" height="100"></canvas>
 <script>
     var ctx = document.getElementById('myChart');
+    var color = Chart.helpers.color;
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
+            labels: <%= @coverage_reports.map { |report| report.id } %>,
+            datasets: [
+                {
                 label: 'Executable Lines',
                 data: <%= @coverage_reports.map { |report| report.executable_lines } %>,
-                backgroundColor: [ 'rgba(255, 99, 132, 1.0)' ],
-                borderColor: [ 'rgba(255, 99, 132, 1.0)' ],
+                backgroundColor: [ 'rgba(255, 99, 132, 0.3)' ],
+                borderColor: [ 'rgba(255, 99, 132, 0.3)' ],
                 borderWidth: 1,
                 fill: true
-            }]
+                },
+                {
+                    label: 'Covered Lines',
+                    data: <%= @coverage_reports.map { |report| report.covered_lines } %>,
+                    backgroundColor: [ 'rgba(255, 206, 86, 0.6)' ],
+                    borderColor: [ 'rgba(255, 206, 86, 0.6)' ],
+                    borderWidth: 1,
+                    fill: true
+                }
+            ]
+
         },
         options: {
             scales: {
