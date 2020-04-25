@@ -1,19 +1,15 @@
 class Function < ApplicationRecord
 
   def self.make_function(json)
-
     # JSON format:
-    #            {
-    #               "coveredLines": 0,
-    #               "lineCoverage": 0,
-    #               "lineNumber": 25,
-    #               "executionCount": 0,
-    #               "name": "Charts.AxisRendererBase.init(viewPortHandler: Charts.ViewPortHandler, transformer: Swift.Optional<Charts.Transformer>, axis: Swift.Optional<Charts.AxisBase>) -> Charts.AxisRendererBase",
-    #               "executableLines": 6
-    #             }
-    #
-
-    puts json
+    # {
+    #    "coveredLines": 0,
+    #    "lineCoverage": 0,
+    #    "lineNumber": 25,
+    #    "executionCount": 0,
+    #    "name": "Charts.AxisRendererBase.init(viewPortHandler: Charts.ViewPortHandler, transformer: Swift.Optional<Charts.Transformer>, axis: Swift.Optional<Charts.AxisBase>) -> Charts.AxisRendererBase",
+    #    "executableLines": 6
+    #  }
 
     function = Function.create do |f|
       f.covered_lines = json['coveredLines'].to_i

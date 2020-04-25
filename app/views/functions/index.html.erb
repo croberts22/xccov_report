@@ -18,7 +18,11 @@
 
     <tbody>
       <% @functions.each do |function| %>
-        <tr class=<%= function.line_coverage > 75 ? "bg-success" : function.line_coverage > 35 ? "bg-warning" : "bg-danger" %> >
+        <tr class=<%= if function.line_coverage > 75
+                        "bg-success"
+                      else
+                        function.line_coverage > 35 ? "bg-warning" : "bg-danger"
+                      end %> >
           <td><%= function.name %></td>
           <td><%= function.covered_lines %></td>
           <td><%= function.line_coverage %>%</td>
