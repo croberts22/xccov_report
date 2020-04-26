@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="31bac7a0-f0a2-4927-a959-ece363c675da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/functions_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/functions_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/coverage_reports/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coverage_reports/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,17 +282,17 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="625" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587920163362" />
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587927338868">
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587932896085">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587927338868" />
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587932896085" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb</url>
-          <line>1</line>
+          <line>5</line>
           <properties myBlockOrdinal="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
@@ -319,6 +321,14 @@
             <option name="block-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/coverage_files_controller.rb</url>
+          <line>6</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,7 +4,7 @@ module FunctionsHelper
     if function.line_coverage > 0.75
       "bg-success"
     else
-      function.line_coverage > 0.35 ? "bg-warning" : "bg-danger"
+      function.line_coverage > 0.50 ? "bg-warning" : "bg-danger"
     end
   end
 
