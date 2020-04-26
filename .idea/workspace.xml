@@ -4,6 +4,7 @@
     <list default="true" id="31bac7a0-f0a2-4927-a959-ece363c675da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,10 +273,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="539" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1587853925029" />
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587853287817">
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587877159964">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587853287817" />
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587877159964" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587853806735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />

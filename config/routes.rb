@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get '/coverage_reports/:id', to: 'coverage_reports#show'
+
   resources :coverage_reports
   resources :coverage_targets
   resources :coverage_files
