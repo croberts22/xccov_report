@@ -20,11 +20,14 @@ class CoverageTarget < ApplicationRecord
       target.executable_lines = json['executableLines'].to_i
       target.build_product_path = json['buildProductPath']
 
+      files = []
+
       files_json = json['files']
       files_json.each do |file_json|
-        CoverageFile.make_file(target, file_json)
+        files.push(CoverageFile.make_file(target, file_json))
       end
 
+      target.coverage_files = files
       target.coverage_report = coverage_report
     end
 
