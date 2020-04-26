@@ -1,5 +1,9 @@
 class CoverageReportsController < ApplicationController
+  protect_from_forgery prepend: true
   before_action :set_coverage_report, only: [:show, :edit, :update, :destroy]
+  helper CoverageReportsHelper
+  helper FunctionsHelper
+  helper CoverageFilesHelper
 
   # GET /coverage_reports
   # GET /coverage_reports.json
@@ -26,7 +30,7 @@ class CoverageReportsController < ApplicationController
   # POST /coverage_reports
   # POST /coverage_reports.json
   def create
-    @coverage_report = CoverageReport.new(coverage_report_params)
+    @coverage_report = CoverageReport.make_report(coverage_report_params)
 
     respond_to do |format|
       if @coverage_report.save
@@ -67,10 +71,13 @@ class CoverageReportsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_coverage_report
       @coverage_report = CoverageReport.find(params[:id])
+      @coverage_targets = @coverage_report.coverage_targets
     end
 
     # Only allow a list of trusted parameters through.
     def coverage_report_params
-      params.require(:coverage_report).permit(:covered_lines, :line_coverage, :coverage_targets, :executable_lines)
+      file = params.require(:file)
+      json = JSON.load File.open(file.tempfile)
+      json
     end
 end

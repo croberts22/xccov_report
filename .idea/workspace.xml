@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="31bac7a0-f0a2-4927-a959-ece363c675da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coverage_reports/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/coverage_reports_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/coverage_reports_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/coverage_files_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/coverage_files_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/functions_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/functions_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/coverage_target.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/coverage_target.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/coverage_reports/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coverage_reports/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,62 +214,66 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="560" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1587847391073" />
-    <state x="786" y="277" key="#xdebugger.evaluate" timestamp="1587848498753">
+    <state x="691" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587923869248">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="786" y="277" key="#xdebugger.evaluate/0.23.1920.1057@0.23.1920.1057" timestamp="1587848498753" />
+    <state x="691" y="360" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057@0.23.1920.1057" timestamp="1587923869248" />
+    <state x="1260" y="286" key="#xdebugger.evaluate" timestamp="1587928289763">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1260" y="286" key="#xdebugger.evaluate/0.23.1920.1057@0.23.1920.1057" timestamp="1587928289763" />
     <state width="743" height="466" key="DebuggerActiveHint" timestamp="1587848717680">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="743" height="466" key="DebuggerActiveHint/0.23.1920.1057@0.23.1920.1057" timestamp="1587848717680" />
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.0.bottom" timestamp="1587928297291">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.0.center" timestamp="1587854127967">
+    <state width="1878" height="417" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587928297291" />
+    <state width="1878" height="417" key="GridCell.Tab.0.center" timestamp="1587928297291">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127967" />
-    <state width="1878" height="358" key="GridCell.Tab.0.left" timestamp="1587854127967">
+    <state width="1878" height="417" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587928297291" />
+    <state width="1878" height="417" key="GridCell.Tab.0.left" timestamp="1587928297290">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127967" />
-    <state width="1878" height="358" key="GridCell.Tab.0.right" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587928297290" />
+    <state width="1878" height="417" key="GridCell.Tab.0.right" timestamp="1587928297291">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.1.bottom" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587928297291" />
+    <state width="1878" height="417" key="GridCell.Tab.1.bottom" timestamp="1587928277708">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.1.center" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587928277708" />
+    <state width="1878" height="417" key="GridCell.Tab.1.center" timestamp="1587928277708">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.1.left" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587928277708" />
+    <state width="1878" height="417" key="GridCell.Tab.1.left" timestamp="1587928277708">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.1.right" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587928277708" />
+    <state width="1878" height="417" key="GridCell.Tab.1.right" timestamp="1587928277708">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.2.bottom" timestamp="1587854127969">
+    <state width="1878" height="417" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587928277708" />
+    <state width="1878" height="417" key="GridCell.Tab.2.bottom" timestamp="1587928272212">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.2.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127969" />
-    <state width="1878" height="358" key="GridCell.Tab.2.center" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.2.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1587928272212" />
+    <state width="1878" height="417" key="GridCell.Tab.2.center" timestamp="1587928272212">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.2.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.2.left" timestamp="1587854127968">
+    <state width="1878" height="417" key="GridCell.Tab.2.center/0.23.1920.1057@0.23.1920.1057" timestamp="1587928272212" />
+    <state width="1878" height="417" key="GridCell.Tab.2.left" timestamp="1587928272211">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.2.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127968" />
-    <state width="1878" height="358" key="GridCell.Tab.2.right" timestamp="1587854127969">
+    <state width="1878" height="417" key="GridCell.Tab.2.left/0.23.1920.1057@0.23.1920.1057" timestamp="1587928272211" />
+    <state width="1878" height="417" key="GridCell.Tab.2.right" timestamp="1587928272212">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.2.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587854127969" />
+    <state width="1878" height="417" key="GridCell.Tab.2.right/0.23.1920.1057@0.23.1920.1057" timestamp="1587928272212" />
     <state x="461" y="190" key="SettingsEditor" timestamp="1587849312170">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -273,13 +282,47 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="539" height="445" key="SwitcherDM/0.23.1920.1057@0.23.1920.1057" timestamp="1587853925029" />
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587877159964">
+    <state x="625" y="256" key="run.anything.popup" timestamp="1587920163362">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587877159964" />
+    <state x="625" y="256" key="run.anything.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587920163362" />
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1587927338868">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="625" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1587927338868" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/helpers/coverage_reports_helper.rb</url>
+          <line>1</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/coverage_reports_controller.rb</url>
+          <line>32</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/coverage_reports_controller.rb</url>
+          <line>80</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587853806735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
-    <SUITE FILE_PATH="coverage/xccov_report@seed__xccov_report.rcov" NAME="seed: xccov_report Coverage Results" MODIFIED="1587849205531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
+    <SUITE FILE_PATH="coverage/xccov_report@Development__xccov_report.rcov" NAME="Development: xccov_report Coverage Results" MODIFIED="1587928360276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
+    <SUITE FILE_PATH="coverage/xccov_report@seed__xccov_report.rcov" NAME="seed: xccov_report Coverage Results" MODIFIED="1587917516470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="xccov_report" />
   </component>
 </project>
