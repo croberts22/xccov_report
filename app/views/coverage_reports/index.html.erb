@@ -51,7 +51,7 @@
       <th>Line coverage</th>
       <th># of Targets</th>
       <th>Report Uploaded</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
     </thead>
 
@@ -64,7 +64,6 @@
         <td><%= coverage_report.coverage_targets.count %></td>
         <td><%= coverage_report.created_at.strftime("%b %d, %Y at %l:%I:%M %P") %></td>
         <td><%= link_to 'More Details', coverage_report %></td>
-        <td><%= link_to 'Edit', edit_coverage_report_path(coverage_report) %></td>
         <td><%= link_to 'Delete', coverage_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
