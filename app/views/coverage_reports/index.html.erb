@@ -1,75 +1,86 @@
 <p id="notice"><%= notice %></p>
 
-<h1>iOS Coverage Report - TurnipTime</h1>
+<h1 class="text-center">Code Coverage Report - TurnipTime</h1>
 
-<canvas id="myChart" width="400" height="100"></canvas>
-<script>
-    var ctx = document.getElementById('myChart');
-    var color = Chart.helpers.color;
-    var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: <%= @coverage_reports.map { |report| report.id } %>,
-            datasets: [
-                {
-                label: 'Executable Lines',
-                data: <%= @coverage_reports.map { |report| report.executable_lines } %>,
-                backgroundColor: [ 'rgba(255, 99, 132, 0.3)' ],
-                borderColor: [ 'rgba(255, 99, 132, 0.3)' ],
-                borderWidth: 1,
-                fill: true
-                },
-                {
-                    label: 'Covered Lines',
-                    data: <%= @coverage_reports.map { |report| report.covered_lines } %>,
-                    backgroundColor: [ 'rgba(255, 206, 86, 0.6)' ],
-                    borderColor: [ 'rgba(255, 206, 86, 0.6)' ],
-                    borderWidth: 1,
-                    fill: true
-                }
-            ]
+<% if @coverage_reports.count > 0 %>
+  <canvas id="myChart" width="400" height="100"></canvas>
+  <script>
+      var ctx = document.getElementById('myChart');
+      var color = Chart.helpers.color;
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: <%= @coverage_reports.map { |report| report.id } %>,
+              datasets: [
+                  {
+                      label: 'Executable Lines',
+                      data: <%= @coverage_reports.map { |report| report.executable_lines } %>,
+                      backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                      borderColor: 'rgba(255, 99, 132, 0.1)',
+                      pointBorderColor: 'rgba(255, 99, 132, 0.5)',
+                      pointBackgroundColor: 'rgba(255, 99, 132, 0.5)',
+                      borderWidth: 1,
+                      fill: true
+                  },
+                  {
+                      // #129, 225, 120
+                      label: 'Covered Lines',
+                      data: <%= @coverage_reports.map { |report| report.covered_lines } %>,
+                      backgroundColor: 'rgba(129, 225, 120, 1.0)',
+                      borderColor: 'rgba(129, 225, 120, 1.0)',
+                      pointBorderColor: 'rgba(99, 190, 91, 1.0)',
+                      pointBackgroundColor: 'rgba(99, 190, 91, 1.0)',
+                      borderWidth: 1,
+                      fill: true
+                  }
+              ]
 
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
-</script>
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true
+                      }
+                  }]
+              }
+          }
+      });
+  </script>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-    <tr>
-      <th>Covered lines</th>
-      <th>Executable lines</th>
-      <th>Line coverage</th>
-      <th># of Targets</th>
-      <th>Report Uploaded</th>
-      <th colspan="2"></th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <% @coverage_reports.each do |coverage_report| %>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
       <tr>
-        <td><%= number_with_delimiter(coverage_report.covered_lines) %></td>
-        <td><%= number_with_delimiter(coverage_report.executable_lines) %></td>
-        <td><%= number_to_percentage(coverage_report.line_coverage, precision: 2) %></td>
-        <td><%= coverage_report.coverage_targets.count %></td>
-        <td><%= coverage_report.created_at.strftime("%b %d, %Y at %l:%I:%M %P") %></td>
-        <td><%= link_to 'More Details', coverage_report %></td>
-        <td><%= link_to 'Delete', coverage_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Covered lines</th>
+        <th>Executable lines</th>
+        <th>Line coverage</th>
+        <th># of Targets</th>
+        <th>Report Uploaded</th>
+        <th colspan="2"></th>
       </tr>
-    <% end %>
-    </tbody>
-  </table>
-</div>
+      </thead>
+
+      <tbody>
+      <% @coverage_reports.each do |coverage_report| %>
+        <tr>
+          <td><%= number_with_delimiter(coverage_report.covered_lines) %></td>
+          <td><%= number_with_delimiter(coverage_report.executable_lines) %></td>
+          <td><%= number_to_percentage(coverage_report.line_coverage, precision: 2) %></td>
+          <td><%= coverage_report.coverage_targets.count %></td>
+          <td><%= coverage_report.created_at.strftime("%b %d, %Y at %l:%I:%M %P") %></td>
+          <td><%= link_to 'More Details', coverage_report %></td>
+          <td><%= link_to 'Delete', coverage_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+<% else %>
+  <p class="lead text-center">No reports were found. Upload some reports from Xcode to see trends. 📈<br>
+  You can upload a report by doing a POST to <code>localhost:3000/coverage_reports/</code>.</p>
+<% end %>
+
 <br>
 
-<%= link_to 'New Coverage Report', new_coverage_report_path %>
+<%#= link_to 'New Coverage Report', new_coverage_report_path %>
