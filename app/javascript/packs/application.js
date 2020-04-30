@@ -13,6 +13,7 @@ require("channels")
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require Chart.min
+//= require ProgressBar.min
 //= require_tree .
 
 // Uncomment to copy all static images under ../images to the output folder and reference

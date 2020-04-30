@@ -2,8 +2,30 @@
 
 <% @coverage_targets.each do |target| %>
   <h2><%= target.name %></h2>
-  <% sorted_files(target.coverage_files).each do |file| %>
+  <% sorted_files(target.coverage_files).each_with_index do |file, index| %>
     <h3><%= file.name %></h3>
+    <h4></h4>
+    <div id="progress<%= index %>" style="height: 16px;"></div>
+    <script>
+        var ctx = "progress<%= index %>"
+        var bar = new ProgressBar.Line(document.getElementById(ctx), {
+            strokeWidth: 1.2,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#A0A0A0',
+            trailColor: '#EEEEEE',
+            trailWidth: 1,
+            svgStyle: {width: '100%', height: '100%'},
+            from: {color: '#FF3333'},
+            to: {color: '#99FF33'},
+            step: (state, bar) => {
+                bar.path.setAttribute('stroke', state.color);
+                bar.setText(Math.round(bar.value() * 100) + ' %');
+            }
+        });
+
+        bar.animate(<%= file.line_coverage %>);  // Number from 0.0 to 1.0
+    </script>
     <div class="table-responsive">
       <table class="table">
         <thead>
