@@ -2,8 +2,27 @@
 
 <% @coverage_targets.each do |target| %>
   <h2><%= target.name %></h2>
+  <h3>Insights</h3>
+  <% no_code_coverage_files = sorted_files(target.coverage_files).select { |f| f.line_coverage == 0.0 } %>
+  <% decent_code_coverage_files = sorted_files(target.coverage_files).select { |f| f.line_coverage >= 0.90 } %>
+  <% if no_code_coverage_files.count > 0 %>
+    <div class="alert alert-danger" role="alert">
+      The following files have 0% code coverage! 😨
+    </div>
+    <% no_code_coverage_files.sort_by { |f| -f.executable_lines }.each do |file| %>
+      <ul><a href="#<%= file.name %>"><%= file.name %></a> (<%= file.executable_lines %> lines executed)</ul>
+    <% end %>
+  <% end %>
+  <% if decent_code_coverage_files.count > 0 %>
+    <div class="alert alert-success" role="alert">
+      The following files have at least 90% code coverage. That's awesome! 🎉
+    </div>
+    <% decent_code_coverage_files.each do |file| %>
+      <ul><a href="#<%= file.name %>"><%= file.name %></a></ul>
+    <% end %>
+  <% end %>
   <% sorted_files(target.coverage_files).each_with_index do |file, index| %>
-    <h3><%= file.name %></h3>
+    <h3 id="<%= file.name %>"><%= file.name %></h3>
     <h4></h4>
     <div id="progress<%= index %>" style="height: 16px;"></div>
     <script>
