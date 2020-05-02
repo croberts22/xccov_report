@@ -1,24 +1,13 @@
-# README
+# `xccov` Report: An Xcode Coverage Reporter 
+ 
+A Rails application that can be deployed to aggregate code coverage reports generated from Xcode. Specifically, it allows you to upload JSON files generated from `xccov` and it will display historical trends, just like you'd see in Xcode Server! But without needing another Apple-specific machine.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Motivation
 
-Things you may want to cover:
+This is a project I worked on for a software testing class in graduate school at UT.
 
-* Ruby version
+## Installation Notes
 
-* System dependencies
+Please be sure to run `bundle install` first before attempting to set up this application. By default, this will run on port 3000.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This uses Ruby version 2.6.3.
